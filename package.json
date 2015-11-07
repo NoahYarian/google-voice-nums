@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NoahYarian/google-voice-nums/issues"
   },
-  "homepage": "https://github.com/NoahYarian/google-voice-nums#readme"
+  "homepage": "https://github.com/NoahYarian/google-voice-nums#readme",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
 }
