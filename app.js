@@ -29,7 +29,7 @@ function callback(error, response, body) {
   }
 }
 
-for (var i = 100; i < 400; i++) {
+for (var i = 0; i < 10; i++) {
 
   options = {
     url: makeUrl(615, i),
