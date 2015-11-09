@@ -29,17 +29,33 @@ function callback(error, response, body) {
   }
 }
 
-for (var i = 0; i < 10; i++) {
+// for (var i = 0; i < 10; i++) {
 
-  options = {
-    url: makeUrl(615, i),
-    headers: {
-      'User-Agent': 'request',
-      'cookie': cookie,
-      'json': true
-    }
-  }
+//   options = {
+//     url: makeUrl(615, i),
+//     headers: {
+//       'Referer': 'https://www.google.com/voice',
+//       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36',
+//       'cookie': cookie,
+//       'json': true
+//     }
+//   }
 
-  request(options, callback);
-}
+//   request(options, callback);
+// }
+
+
+// what do i want this thang to do?
+//
+// accept cli arguments for:
+// -area code
+// -number of nums to get
+// -query
+// -page number of results to start from
+//
+// show periodic progress indication
+// delay requests appropriately so as not to get cut off -- how much??
+
+
+
 
