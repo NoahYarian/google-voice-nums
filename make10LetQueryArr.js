@@ -46,37 +46,18 @@ function find10LetWordNums (areaCodes) {
   return results;
 }
 
-// var foundWords = find10LetWordNums(areaCodesGV);
-var temp = {
-  "224": [
-    "200",
-    "201",
-    "202",
-    "203",
-    "205",
-    "206",
-    "207",
-    "208",
-    "209",
-    "210",
-    "212",
-    "213",
-    "214",
-    "215",
-    "216",
-    "217",
-    "218",
-    "220",
-    "221",
-    "222",
-    "223",
-    "225",
-    "226",
-    "227",
-    "228"]
-  }
+var foundWords = find10LetWordNums(areaCodesGV);
+var wordsArr = [];
 
-console.log(JSON.stringify(find10LetWordNums(areaCodesGV)));
+for (var ac in foundWords) {
+  for (var pre in foundWords[ac]) {
+    for (var word in foundWords[ac][pre]) {
+      wordsArr.push(word)
+    }
+  }
+}
+
+console.log(wordsArr);
 
 
 // {
